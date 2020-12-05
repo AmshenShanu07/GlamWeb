@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamGirlDesigns</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#a1084c">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="taskbar">
+            <div id="menu" onclick="pop()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+        </div>
+        <ul id="nav" class="navlist">
+            <li class="listnav"><a href="">Home</a></li>
+            <li class="listnav"><a href="">Cart</a></li>
+            <li class="listnav"><a href="#cat">Category</a></li>
+            <li class="contactus">ContactUs</i></li>
+            <li class="contactlogo">
+                <form action="">
+                    <th><a href="https://www.facebook.com/Glam-Girl-Designs-160630161334973"><span
+                                class="fa fa-facebook"></span></a></th>
+                    <th><a href="https://instagram.com/glamgirldesigns"><span class="fa fa-instagram"></span></a></th>
+                    <th><a href="https://wa.me/+917736724921"><span class="fa fa-whatsapp"></span></a></th>
+                </form>
+            </li>
+        </ul>
+        <div class="navbg" id="bg">
+        </div>
+    </header>
+    <div class="row">
+        <section class="slide col-12w-100" id="slide">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slider-logo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider-aboutus.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider-photo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <section class="about container col-12" style="margin-top:50px; margin-top: 4rem;">
+            <div class="">
+                <h1 class="text-light">
+                    <center>About</center>
+                </h1>
+                <p style="font-size:20px; text-align: center;" class="text-light ">Glam Girl Designs is a classy
+                    boutique to
+                    glam up yourself. We
+                    just not only aim to make a women more beautiful but also to assure her confidence. So its a
+                    place
+                    for
+                    dreamers and party lovers to make their dream a reality</p>
+            </div>
+        </section>
+
+        <section class="container mt-5 mb-5 col-12 pl-2">
+            <h1 class="mb-5 col-12 text-light" id="cat">
+                <center>Collections</center>
+            </h1>
+            <div class="row" id="clist">
+
+                <div class="cat card col-lg-4 col-md-12 row mt-2 ml-1" style="background: black;">
+                    <img src="./images/kid.png" class="card-img-top col-12 center mt-2 img" id="kidscrdimg" alt="...">
+                    <div class="card-body col-12">
+                        <h1 class="text-light" style='text-align: center;'>Kids</h1>
+                        <div class="explore btn btn-outline-warning w-100" id="kidscrd" onclick="show('kidscrd')">
+                            Explore</div>
+                        <div id="kidscrdlist" class="explorelist mt-5 animated flipInY">
+                            <a href="" class="btn btn-outline-success ml-3 mt-2 ">Baptism Set</a>
+                            <a href="" class="btn btn-outline-success ml-3 mt-2 ">Kids Frock</a>
+                            <a href="" class="btn btn-outline-success ml-3 mt-2 ">Traditional Kids</a>
+                            <a href="" class="btn btn-outline-success ml-3 mt-2 ">Skirts & Tops</a>
+                            <a href="" class=" col-2"></a>
+                            <a href="" class=" col-2"></a>
+                            <a href="" class=" col-2"></a>
+                            <a href="" class=" col-2"></a>
+                            <a href="" class=" col-2"></a>
+                            <div class="btn btn-outline-danger w-100 mt-5" onclick="hide('kidscrd')"><i
+                                    class="fa fa-angle-double-left mr-2">Back</i></div>
+                        </div>
+                    </div>
+                </div>
+`
+                <div class="cat card col-lg-4 col-md-12 row mt-2 contentList ml-2" style="background: black;">
+                    <img src="./images/women.png" class="card-img-top col-12 center mt-2 img" id="womencrdimg"
+                        alt="...">
+                    <div class="card-body col-12">
+                        <h1 class="text-light" style='text-align: center;'>Women</h1>
+                        <div class="explore btn btn-outline-warning w-100" id="womencrd" onclick="show('womencrd')">
+                            Explore</div>
+                        <div id="womencrdlist" class="explorelist row mt-5 animated flipInY">
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Bridal</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Saree</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-3">Salwar</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-3">Gown</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Lehengas</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Dhavani</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Kurthi</a>
+                            <a href="" class="btn btn-outline-success ml-2 mt-2 col-4">Traditional Wear</a>
+                            <div class="btn btn-outline-danger w-100 mt-5" onclick="hide('womencrd')"><i
+                                    class="fa fa-angle-double-left mr-2">Back</i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat card col-lg-4 col-md-12 row mt-2 ml-2" style="background: black;">
+                    <img src="./images/M&M.png" class="card-img-top col-12 center mt-2 img" alt="...">
+                    <div class="card-body col-12">
+                        <h1 class="text-light cardtext" style='text-align: center;'>Mom & Me</h1>
+                        <div class="explore btn btn-outline-warning w-100">Explore</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="col-12">
+            <div class="row bg-secondary">
+                <div class="bg-secondary center" id="footer">
+                    <p class="text-center text-light mt-5" style="font-size:1em;">© Copyright 2020 Reserved</p>
+                    <div class="row">
+                    </div>
+                    <p class="text-center text-light">By GlamGirlDesigns</p><br>
+                    <form action="#" class="colorlib-subscribe-form">
+                        <div class="form-group d-flex ml-3">
+                            <a href="https://www.facebook.com/Glam-Girl-Designs-160630161334973"><span
+                                    class="fa fa-facebook ml-2 fa-2x"></span></a>
+                            <a href="https://instagram.com/glamgirldesigns"><span
+                                    class="fa fa-instagram ml-3 fa-2x"></span></a>
+                            <a href="https://wa.me/+917736724921"><span class="fa fa-whatsapp ml-3 fa-2x"></span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+<script src="js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script>
+    function pop() {
+        document.getElementById('menu').classList.toggle('change')
+        document.getElementById('nav').classList.toggle('change')
+        document.getElementById('bg').classList.toggle('changebg')
+    }
+    function show(name) {
+        document.getElementById(name).style.display = "none"
+        document.getElementById(name + 'img').style.display = "none"
+        document.getElementById(name + 'list').style.display = 'block'
+    }
+    function hide(name) {
+        document.getElementById(name).style.display = "block"
+        document.getElementById(name + 'img').style.display = "block"
+        document.getElementById(name + 'list').style.display = 'none'
+    }
+</script>
+
+</html>

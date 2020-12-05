@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem 1rem 1rem 30rem;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        } */
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner" id="div">
+            <div class="flip-card-front">
+                <div id="frnt">
+                    <div class="form-group">
+                        <h1>LogIn</h1>
+                    </div>
+                    <div class="form-group">
+                        <h4 for="exampleInputEmail1">Email address</h4>
+                        <input class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <h4 for="exampleInputPassword1">Password</h4>
+                        <input class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <div onclick="clk('180','frnt')">create a account!</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div id="bck">
+                    <div class="form-group">
+                        <h1>SignUp</h1>
+                        <!-- <h3>Hover over the image below:</h3> -->
+                    </div>
+                    <div class="form-group">
+                        <h4 for="exampleInputEmail1">Email address</h4>
+                        <input class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <h4 for="exampleInputPassword1">Password</h4>
+                        <input class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <div onclick="clk('360','bck')">Alredy have a accont</div>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function clk(angle, id) {
+
+        document.getElementById('div').style.transform = "rotateY(" + angle + "deg)"
+    }
+</script>
+
+</html>

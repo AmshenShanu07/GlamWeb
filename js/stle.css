@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+
+}
+.thecard {
+  transform-style:preserve-3d ;
+  position: absolute;
+  width: 15rem;
+  height: 20rem;
+  transition: 0.3s;
+}
+.container :hover{
+    transform: rotateY(180deg);
+}
+.front {
+  position: absolute;
+  width: 15rem;
+  height: 20rem;
+  background: yellow;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  width: 15rem;
+  height: 20rem;
+  background: green;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
